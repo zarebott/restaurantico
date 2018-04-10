@@ -1,0 +1,10 @@
+<h1> Show me the money </h1>
+<p> hey </p>
+
+<% if @profile %>
+  <%= @profile.inspect %>
+  <%= link_to "Editar", edit_profile_path(@profile) %>
+<% else %>
+  <%= link_to "Crear", new_profile_path %>
+<% end %>
+<hr>
